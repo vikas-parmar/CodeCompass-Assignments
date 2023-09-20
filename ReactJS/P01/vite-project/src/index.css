@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+button,
+input,
+select {
+  cursor: pointer;
+}
+
+main {
+  width: 100vw;
+  height: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(234, 234, 255);
+}
+
+.box {
+  width: 70vw;
+  margin: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 1px #000;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+table {
+  width: 100%;
+  padding: 10px 20px;
+}
+
+th,
+td {
+  padding: 10px;
+  border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.cat {
+  text-align: right;
+}
+
+tr {
+  height: 40px;
+}
+
+tr:hover {
+  background-color: #eeeeee;
+}
+
+th {
+  text-align: left;
+}
+
+td {
+  text-align: right;
+}
+
+footer {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 30px;
+}
+
+.pagination-row-per-page {
+  display: flex;
+  gap: 10px;
+}
+
+.pagination-row-per-page>select {
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+
+.pagination-row-per-page>select:hover {
+  outline: 1px solid gray;
+}
+
+.paginate-button {
+  display: flex;
+  gap: 10px;
+}
+
+.paginate-button>button {
+  font-weight: 900;
+  font-size: 20px;
+  background-color: white;
+  outline: none;
+  border: none;
+}
+
+@media only screen and (max-width: 700px) {
+  body{
+    font-size: 2vw;
+  }
+  .heading {
+    padding: 5px;
+  }
+
+  table {
+    width: 100%;
+    padding: 5px 10px;
+  }
+
+  th,
+  td {
+    padding: 4px;
+  }
+  tr{
+    height: fit-content;
+  }
+  footer {
+    padding: 5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 7px;
+  }
+
+  .pagination-row-per-page>select {
+    font-size: 3vw;
+  }
+
+  .paginate-button>button {
+    font-weight: 900;
+    font-size: 3vw;
+  }
+}
